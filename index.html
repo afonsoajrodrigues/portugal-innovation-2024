@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portugal's Innovation Slowdown</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <p class="kicker">Data Journalism &middot; Portugal, 2022&ndash;2024</p>
+  <h1>Portugal's Innovation Slowdown</h1>
+  <p class="subhead">After a pandemic-era peak, the share of Portuguese companies innovating has
+    fallen for two survey periods in a row. Here's what the numbers say &mdash; and don't say.</p>
+  <p class="byline">By Afonso Rodrigues</p>
+</header>
+
+<main>
+
+  <section class="intro">
+    <p>Every two years, the National Statistics Institute (INE) and the DGEEC ask thousands of
+      Portuguese companies the same basic question: did you innovate? In the 2022&ndash;2024
+      round of the <a href="https://www.ine.pt" target="_blank" rel="noopener">Community Innovation
+      Survey</a>, 42.5% of companies with 10 or more employees said yes &mdash; they had developed
+      some kind of innovation activity, from a new product to an internal R&amp;D project.</p>
+    <p>That sounds healthy, until you look at where that number came from.</p>
+  </section>
+
+  <section>
+    <h2>1. A pandemic bump, now fading</h2>
+    <p>Innovation activity in Portugal didn't rise steadily. It spiked to 48.0% in 2018&ndash;2020
+      and has been sliding ever since. The DGEEC's own explanation points to COVID-19: companies
+      were forced to overhaul how they worked almost overnight, and much of that scramble counted
+      as <em>process</em> innovation. As the emergency eased, so did the rate.</p>
+    <figure id="chart-trend"></figure>
+    <p class="caption">Share of companies with 10+ employees reporting innovation activity, by type
+      and survey period. Source: INE / DGEEC, CIS 2022&ndash;2024.</p>
+    <p>Process innovation is the clearest example: it jumped nearly 15 points between 2016&ndash;18
+      and 2018&ndash;20, then gave almost half of that back over the next two survey rounds.
+      Product innovation, by contrast, barely moved &mdash; it's the steadier of the two.</p>
+  </section>
+
+  <section>
+    <h2>2. Size and sector decide who innovates</h2>
+    <p>The 42.5% headline hides enormous gaps. Large companies &mdash; 250 employees or more &mdash;
+      innovate at almost double the national rate. So do two sectors in particular: information
+      &amp; communication, and financial &amp; insurance services.</p>
+    <figure id="chart-segments"></figure>
+    <p class="caption">Share of companies reporting innovation activity, by group, 2022&ndash;2024.
+      Source: INE / DGEEC, CIS 2022&ndash;2024.</p>
+  </section>
+
+  <section>
+    <h2>3. Almost everyone is cooling off &mdash; except industry</h2>
+    <p>Compared with the previous survey round (2020&ndash;2022), innovation activity fell in
+      nearly every sector. Transport &amp; storage and financial services cooled the fastest.
+      Industry was the one exception, posting the only increase of any sector.</p>
+    <figure id="chart-change"></figure>
+    <p class="caption">Percentage-point change in share of innovating companies, 2020&ndash;22
+      to 2022&ndash;24. Source: INE / DGEEC, CIS 2022&ndash;2024.</p>
+  </section>
+
+  <section>
+    <h2>4. Where the money actually goes</h2>
+    <p>Despite fewer companies innovating, total spending on innovation activities rose sharply in
+      2024, reaching &euro;4,865.1 million &mdash; up from &euro;3,382.4 million in 2022. That
+      money is heavily concentrated: Greater Lisbon and the North together account for 75% of it.</p>
+    <figure id="chart-spending"></figure>
+    <p class="caption">Innovation spending by region, 2024, &euro; millions. Source: INE / DGEEC,
+      CIS 2022&ndash;2024.</p>
+    <p>A slice of that spending has a green label attached: 25.4% of companies introduced an
+      innovation with some environmental benefit, and the money behind it &mdash; &euro;1,448.3
+      million &mdash; made up <strong>29.8%</strong> of all innovation spending in 2024.</p>
+  </section>
+
+  <section>
+    <h2>5. Guarding the idea: trademarks over patents</h2>
+    <p>When Portuguese companies do protect their innovations, they overwhelmingly reach for a
+      trademark rather than a patent. Registering a brand is cheap and fast; patenting an invention
+      is neither, and it shows in the numbers.</p>
+    <figure id="chart-ip"></figure>
+    <p class="caption">Share of companies using each intellectual property instrument,
+      2022&ndash;2024. Source: INE / DGEEC, CIS 2022&ndash;2024.</p>
+  </section>
+
+  <section class="outro">
+    <h2>The takeaway</h2>
+    <p>Portugal's innovation story isn't one of steady progress. It's a pandemic-era spike that is
+      still working its way back down, propped up by a small group of large, urban, tech- and
+      finance-heavy companies &mdash; while spending climbs even as participation shrinks.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Source: Instituto Nacional de Estat&iacute;stica (INE) &amp; Dire&ccedil;&atilde;o-Geral de
+    Estat&iacute;sticas da Educa&ccedil;&atilde;o e Ci&ecirc;ncia (DGEEC), <em>Inqu&eacute;rito
+    Comunit&aacute;rio &agrave; Inova&ccedil;&atilde;o 2022&ndash;2024</em>, published 10 July 2026.
+    Sample: 15,813 companies, 13,581 valid responses.</p>
+  <p>Built with D3.js for a data journalism assignment.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+:root {
+  --ink: #262322;
+  --paper: #fbf9f6;
+  --muted: #6b655f;
+  --line: #ddd6cd;
+  --teal: #2b6777;
+  --accent: #d17a4a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin: 0 0 1rem;
+}
+
+.subhead {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 34rem;
+}
+
+.byline {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 1.5rem;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.intro {
+  padding-top: 2.5rem;
+  font-size: 1.1rem;
+}
+
+section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+figure {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.outro {
+  background: #f2ede4;
+  margin: 0 -1.5rem;
+  padding: 2.5rem;
+}
+
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* --- chart styling --- */
+
+svg { max-width: 100%; }
+
+.bar { fill: var(--teal); }
+.bar.highlight { fill: var(--accent); }
+.bar.negative { fill: #b5552f; }
+
+.axis text {
+  font-size: 0.75rem;
+  fill: var(--muted);
+}
+
+.axis path,
+.axis line {
+  stroke: var(--line);
+}
+
+.bar-label {
+  font-size: 0.75rem;
+  fill: var(--ink);
+}
+
+.line {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+.line-label {
+  font-size: 0.75rem;
+}
+
+.dot {
+  stroke: var(--paper);
+  stroke-width: 1.5px;
+}
