@@ -68,16 +68,11 @@ main {
 }
 
 section {
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--line);
-}
-
-section:last-of-type {
-  border-bottom: none;
+  padding: 2rem 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 0.75rem;
 }
 
@@ -86,14 +81,14 @@ p {
 }
 
 figure {
-  margin: 1.5rem 0 0.5rem;
+  margin: 1rem 0 0.25rem;
 }
 
 .caption {
   font-size: 0.85rem;
   color: var(--muted);
   font-style: italic;
-  margin-top: 0.25rem;
+  margin: 0.25rem 0 1.25rem;
 }
 
 .outro {
@@ -131,6 +126,10 @@ svg { max-width: 100%; }
 .bar-label {
   font-size: 0.75rem;
   fill: var(--ink);
+}
+
+.bar-label-inside {
+  fill: var(--paper);
 }
 
 .line {
